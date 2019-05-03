@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Nunito|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Nunito|Pacifico|Shadows+Into+Light');
 
 .fontdemo1 {
   font-family: 'Nunito', sans-serif;
@@ -11,6 +11,6 @@
 }
 
 .fontdemo3 {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Shadows Into Light', cursive;
   color: #484e51;
 }
