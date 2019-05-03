@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Nunito|Pacifico');
+
+.fontdemo1 {
+  font-family: 'Nunito', sans-serif;
+  color: black;
+}
+
+.fontdemo2 {
+  font-family: 'Pacifico', cursive;
+  color: #484e51;
+}
+
+.fontdemo3 {
+  font-family: 'Amatic SC', cursive;
+  color: #484e51;
+}
