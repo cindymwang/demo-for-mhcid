@@ -21,10 +21,15 @@ body {
 
 h1 {
 	text-align: center;
+	padding: 2%;
 }
 
 input {
 	margin: 5%;
+}
+
+.btn-primary {
+	background-color: #212529;
 }
 
 .col-md {
