@@ -14,3 +14,23 @@
   font-family: 'Shadows Into Light', cursive;
   color: #484e51;
 }
+
+body {
+	background-color: #6E6E6E;
+}
+
+h1 {
+	text-align: center;
+}
+
+input {
+	margin: 5%;
+}
+
+.col-md {
+	padding: 1%;
+}
+
+.house {
+	max-width: 29%;
+}
