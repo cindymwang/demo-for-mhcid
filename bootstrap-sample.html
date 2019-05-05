@@ -1,51 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <title>Bootstrap Demo - Cindy Wang</title>
+  <link rel='stylesheet' type='text/css' href="main.css" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Bootstrap Demo - Cindy Wang</title>
-  </head>
-  <body>
-    <h1>Which House Will Sit on the Iron Throne?</h1>
-    
-        <div class="container-fluid">
-        <div class="row text-center">
-          <div class="col-md">
-           <img class="img-fluid" src="ironthrone.png" alt="Iron Throne"/>  
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md">
-            <img class="img-fluid" src="targ.png" alt="image of house targaryen"/> 
-            <input class="btn btn-primary" type="button" value="Targaryen">
-          </div>
-          <div class="col-md">
-            <img class="img-fluid" src="stark.png" alt="image of house stark"/>  
-            <input class="btn btn-primary" type="submit" value="Stark">
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md">
-            <img class="img-fluid" src="lannister.png" alt="image of house lannister"/>  
-            <input class="btn btn-primary" type="submit" value="Lannister">
-          </div>
-          <div class="col-md">
-            <img class="img-fluid" src="noone.png" alt="image of no one of braavos"/>  
-            <input class="btn btn-primary" type="submit" value="No One">
-          </div>
-        </div>
+</head>
+<body>
+  <h1>Which House Will Sit on the Iron Throne?</h1>
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-md">
+      <img alt="Iron Throne" class="img-fluid" src="ironthrone.png"></div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md">
+        <img alt="image of house targaryen" class="img-fluid house" src="targ.png"></br>
+        <input onclick="targ()" class="btn btn-primary" id="targ" type="button" value="Targaryen">
       </div>
-    
+      <div class="col-md">
+        <img alt="image of house stark" class="img-fluid" src="stark.png"></br>
+        <input onclick="stark()" class="btn btn-primary" type="submit" id="stark" value="Stark">
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md">
+        <img alt="image of house lannister" class="img-fluid house" src="lannister.png"></br>
+        <input onclick="lann()" class="btn btn-primary" type="submit" id="lann" value="Lannister">
+      </div>
+      <div class="col-md">
+        <img alt="image of no one of braavos" class="img-fluid" src="noone.png"></br>
+        <input onclick="valar()" class="btn btn-primary noone" id="valar" type="submit" value="No One">
+      </div>
+    </div>
+  </div><!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+  </script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+  </script> 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script> 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <script>
+  function targ() {
+    document.getElementById("targ").value = "Fire and Blood";
+  }
+
+  function lann() {
+    document.getElementById("lann").value = "A Lannister always Pays his debts";
+  }
+
+  function valar() {
+    document.getElementById("valar").value = "All Men Must Die";
+  }
+  
+  
+function stark() {
+    document.getElementById("stark").value = "Winter Is Coming";
+  }
+
+</script>
+
+</body>
 </html>
